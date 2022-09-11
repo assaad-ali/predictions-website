@@ -7,8 +7,52 @@
     <title>Predictions Website</title>
 </head>
 <body>
-        <textarea id="myTextarea" name="something">This text gets removed</textarea>
 
+    <header>
+
+        <h1></h1>
+
+        <p></p>
+
+    </header>
+
+    <main>
+        
+        <figure>
+            
+            <img id="dog-img" src="" alt="Nice Dog image">
+            <figcaption> caption</figcaption>
+        </figure>
+        <input id="input-name" class="input-name" type="text">
+        <button onclick="get_name()" >Get results</button>
+        <div id="output-container" class="output-container">
+
+            <p id="gender" class="gender">Gender: <span id="gender-result" class="gender-result"></span></p>
+            <p id="gender-prob" class="gender-prob">Gender Probability: <span id="gender-prob-result" class="gender-prob-result"></span></p>
+            <p id="gender-count" class="gender-count">Gender Count: <span id="gender-count-result" class="gender-count-result"></span></p>
+            <p id="age" class="age">Age: <span id="age-result" class="age-result"></span></p>
+            <p id="age-count" class="age-count">Age Count: <span id="age-count-result" class="age-count-result"></span></p>
+            <p id="nationality" class="nationality">Nationality: 
+                <!-- <span id="country_id-result" ></span>
+                <span id="country_prob-result"></span> -->
+                 <table id="nationality_table">
+                     <thead>
+                        <tr id="country_id-result" class="country_id-result">
+                            <th>Country ID</th>
+                            <th>Probability</th>
+                        </tr> 
+                    </thead>         
+                    <tbody></tbody>
+               </table> 
+            </p>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+        
     <script src="index.js"></script>
+
 </body>
 </html>
