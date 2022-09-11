@@ -33,3 +33,40 @@ function output_results(){
         
     }
 }
+
+/********************* Fetch APIs **********************/
+
+function fetch_api(){
+
+    fetch(gender_api + name)
+    .then((response) => response.json())
+    .then(data => {
+        data_gender.innerHTML = data.gender
+        // console.log(data.gender)
+        data_gender_prob.innerHTML = data.probability
+        data_gender_count.innerHTML = data.count
+    })
+
+    fetch(age_api+ name)
+    .then((response) => response.json())
+    .then(data => {
+        data_age.innerHTML = data.age
+        // console.log(data_age.innerHTML)
+        // console.log(data.age)
+        data_age_count.innerHTML = data.count
+    })
+
+    fetch(nationality_api+ name)
+    .then((response) => response.json())
+    .then(data => {
+        populate_nationality(data)
+        // display_nationality(nationality_array)
+        // console.log("fetch",data_country)
+    })
+
+    fetch(dog_img_api)
+    .then((response) => response.json())
+    .then(data => {
+         data_img.src = data.message
+    })
+}
