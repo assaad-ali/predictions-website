@@ -20,3 +20,13 @@ const data_gender = document.getElementById("gender-result"),
       table = document.getElementById("nationality_table")
     //   data_country = document.getElementById("nationality-result"),
       data_img = document.getElementById("dog-img")
+    
+/********************* get user's name **********************/
+
+function get_name(){
+    name = document.getElementById("input-name").value
+    if(name){
+        fetch_api()
+    }
+    
+}
