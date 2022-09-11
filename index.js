@@ -21,12 +21,15 @@ const data_gender = document.getElementById("gender-result"),
     //   data_country = document.getElementById("nationality-result"),
       data_img = document.getElementById("dog-img")
     
-/********************* get user's name **********************/
+/********************* output the prediction's results  **********************/
 
-function get_name(){
+function output_results(){
+
+    
     name = document.getElementById("input-name").value
+    console.log(name)
     if(name){
         fetch_api()
+        
     }
-    
 }
