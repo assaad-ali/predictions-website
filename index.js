@@ -98,3 +98,19 @@ function delete_rows(table) {
         table.deleteRow(i);
     }
 }
+
+/********************* insert new rows **********************/
+
+function insert_rows(country, table) {
+
+    for(i = 0; i < country.length; i++){
+        
+        let row_html = table.insertRow(table.rows.length)
+
+        let country_cell = row_html.insertCell(0)
+        let probabilty_cell = row_html.insertCell(1)
+
+        country_cell.innerHTML = country[i].country_id
+        probabilty_cell.innerHTML = country[i].probability
+    }
+}
