@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Predictions Website</title>
 </head>
 <body>
@@ -17,14 +18,16 @@
     </header>
 
     <main>
-        
-        <figure>
+        <div class="upper-container">
+            <figure>
             
             <img id="dog-img" src="" alt="Enter your name to show your Dog image">
-            <figcaption> caption</figcaption>
-        </figure>
-        <input id="input-name" class="input-name" type="text">
-        <button onclick="output_results()" >Get results</button>
+
+            </figure>
+            <input id="input-name" class="input-name" type="text">
+            <button onclick="output_results()" >Get results</button>
+        </div>
+        
         <div id="output-container" class="output-container">
 
             <p id="gender" class="gender">Gender: <span id="gender-result" class="gender-result"></span></p>
@@ -33,7 +36,6 @@
             <p id="age" class="age">Age: <span id="age-result" class="age-result"></span></p>
             <p id="age-count" class="age-count">Age Count: <span id="age-count-result" class="age-count-result"></span></p>
             <p id="nationality" class="nationality">Nationality: 
-               
                  <table id="nationality_table">
                      
                </table> 
