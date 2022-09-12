@@ -114,3 +114,8 @@ function insert_rows(country, table) {
         probabilty_cell.innerHTML = country[i].probability
     }
 }
+
+window.onload = function(){
+    output_results()
+    
+}
