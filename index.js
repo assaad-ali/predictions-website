@@ -86,3 +86,15 @@ function populate_nationality(data){
     insert_rows(country, table);
     
 }
+
+/********************* delete rows **********************/
+
+function delete_rows(table) {
+
+    var rows_length = table.rows.length;
+    
+    for (var i = rows_length - 1; i >= 0; i-- ){
+
+        table.deleteRow(i);
+    }
+}
