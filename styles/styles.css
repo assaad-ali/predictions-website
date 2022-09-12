@@ -1,7 +1,83 @@
 :root {
   --bk-color: #1d1d2c;
-  --primary: #03a9f4;
-  --hover: #068ece;
+  --primary: rgba(95, 117, 214, 0.6);
+  --hover: rgba(162, 162, 255, 0.6);
   --font-color: #efefef;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--font-color);
+  background : linear-gradient(#1d1d2c, #565691, #2a2a6b);
+  text-transform: uppercase;
+}
+
+main{
+  display: grid;
+  place-items: center;
+
+}
+.upper-container{
+  display: grid;
+  width: 25rem;
+  gap: 2rem;
+  place-items: center;
+}
+input{
+  border-radius: 8px;
+  width: 25%;
+}
+
+button {
+  width: 35%;
+  border-radius: 5px;   
+  margin: 0.8em 1em;
+  background-color: var(--primary);
+  border: solid black;
+  box-shadow: 3px 3px 7px 1px var(--primary);
+  color: inherit;
+  text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: var(--hover);
+  box-shadow: 3px 3px 7px 1px var(--hover);
+}
+
+figure {
+  border: none;
+  box-shadow: 1px 2px 7px 1.4px rgba(146, 146, 146, 0.534);
+  
+}
+
+.output-container{
+  width: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+#dog-img {
+  max-width: 300px;
+}
+
+
+
+h1 {
+  margin: 20px 0;
+  font-size: 24px;
+  text-align: center;
+}
+p{
+  margin: 20px 0;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .upper-container {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
