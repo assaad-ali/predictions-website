@@ -70,3 +70,19 @@ function fetch_api(){
          data_img.src = data.message
     })
 }
+
+/********************* insert data into the nationality table **********************/
+
+function populate_nationality(data){
+
+    let country = data.country
+    console.log(country)
+
+    // let table = document.getElementById(nationality_table_id)
+    console.log(table)
+
+    delete_rows(table)
+
+    insert_rows(country, table);
+    
+}
